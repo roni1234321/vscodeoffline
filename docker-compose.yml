@@ -11,7 +11,7 @@ services:
     volumes:
       - ./artifacts/:/artifacts/
     environment:
-      - SYNCARGS=--sync
+      - SYNCARGS=--sync --total-recommended=5000
       # Enable to sync all extensions
       #- SYNCARGS=--syncall
       # Enable a logfile
